@@ -41,6 +41,22 @@ for(String st:dictionary){
 
         for (int k = 0; k < n; k++) {
             System.out.println(b[k]);}}
+    //        5. Write a menu driven Java program with following options
+    int num;
+    int[] arrays;
+    do{
+        System.out.println("Enter the length:");
+        num=input.nextInt();
+    }while (num<=0);
+    arrays=new int[num];
+    for(int i=0;i<num;i++){
+        System.out.println("enter elment array["+i+"]:");
+        arrays[i]=input.nextInt();
+    }
+        System.out.println("the array is:"+Arrays.toString(arrays));
+        System.out.println(arrays[0]);
+        Arrays.sort(arrays);
+        System.out.println(Arrays.toString(arrays));
     //6. Create a method that generates a random number within a given range. Allow the user to
     //specify the range and call the method to display random numbers.
     public static void randomOfNumber(int numberMin,int numberMax,int numberRandom ){
